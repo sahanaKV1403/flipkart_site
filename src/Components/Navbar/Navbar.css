@@ -1,0 +1,123 @@
+nav{
+    flex-direction: row;
+    position: fixed;
+    top:0;
+    z-index:10;
+    background: #fff;
+    width: 100%;
+}
+
+.nav-left .logo{
+    width:135px;
+    height:70px;
+    margin: 10px 90px 0px 90px;
+}
+.nav-middle .search-box img{
+    width:20px;
+    height:20px;
+    margin:15px;
+
+}
+.nav-middle .search-box{
+    border-radius: 5px;
+    width:600px;
+    height:50px;
+    background-color: rgb(197, 197, 199);
+    margin:20px 90px 0px 20px;
+}
+.nav-middle .search-box input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    width:500px;
+    font-size: larger;
+}
+.nav-right div{
+    display: flex;
+    align-items: center;
+    margin-right:40px;
+    height:50px;
+    margin-top: 20px;
+}
+#signin{
+    width:115px;
+    font-family:cursive;
+    font-size: larger;
+}
+.nav-right .menu-icon:hover{
+ background-color: aliceblue;
+ border: 1px solid rgb(148, 150, 152);
+ border-radius: 4px;
+ height:40px;
+ margin-top: 20px;
+}
+
+#dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 4px;
+    z-index: 1;
+    height: auto !important;
+}
+#dropdown-menu a {
+    padding: 8px 8px;
+    color: #333;
+    text-decoration: none;
+    width:100%;
+}
+#dropdown-menu a:hover{
+    background: hsl(0, 0%, 80%);
+    width:100%;
+}
+
+#dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 42px; 
+    left: 83%;
+    width:225px;
+}
+
+ #menu-dropdown:hover #dropdown-menu{
+    display: flex;
+}
+#count{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding-left:7px;
+    padding-right:7px;
+    position: absolute;
+    top: 13px; 
+    right:13.3%;
+    font-size:small;
+}
+@media(max-width:900px){
+   nav{
+    width: 100%;
+}
+   .nav-right .user-icon p,  .nav-right .cart-icon img{
+        display : block;
+        width:30px;
+    }
+    .nav-right .seller-icon, .nav-right .menu-icon,.nav-right .cart-icon p,.nav-right .user-icon .dropdown-icon, .nav-middle {
+        display: none;
+    }
+    .nav-left .logo{
+        height: 60px;
+        width: 100px;
+        margin-left:40px;
+        margin-right:190px;
+    }
+    .nav-right div{
+        margin-right:40px;
+        margin-top: 10px;
+    }
+    #count{
+        position: absolute;
+        top: 5px; 
+        right:3%;
+    }
+}

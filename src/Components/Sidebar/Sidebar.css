@@ -1,0 +1,94 @@
+
+.sidebar{
+    padding-top:90px;
+}
+.bg{
+    background-color: white;
+    margin:20px;
+    display: flex;
+    flex-direction: row;
+}
+.bg div img{
+   justify-content: space-evenly;
+}
+.bg div{
+    margin:10px 20px 10px 25px;
+    width:15%;
+}
+
+.bg div p{
+    display: flex;
+    padding-left:10px;
+    align-items: center;
+    font-family:cursive;
+    font-size:20px;
+    font-weight: bold;
+    width:120px;
+    
+}
+.bg div p:hover{
+    background-color:rgb(184, 183, 182);
+    border-radius: 8px;
+}
+
+ .mobile-dropdown-menu, .iPhone-dropdown-menu{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 4px;
+    z-index: 1;
+    height: auto !important;
+}
+
+.mobile-dropdown-menu a {
+    padding: 8px 8px;
+    color: #333;
+    text-decoration: none;
+}
+.mobile-dropdown-menu a:hover{
+    background: hsl(0, 0%, 80%);
+    width:100%;
+}
+.mobile-dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 37%; 
+    left: 15%;
+}
+.iPhone-dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 43%; 
+    left: 88%;
+    width:50px !important;
+}
+#iphone:hover .iPhone-dropdown-menu, #mobile-dropdown:hover .mobile-dropdown-menu{
+    display: flex;
+}
+.iPhone-dropdown-menu a{
+    padding:10px;
+}
+
+@media(max-width:900px){
+    .bg div{
+        margin:10px 20px 2px 25px;
+    }
+    .bg{
+        width:93%;
+        overflow-x: scroll ;
+        height:220px;
+    }
+    .mobile-dropdown-menu{
+        position: absolute;
+        top: 38%; 
+        left: 30%;
+        width:150px !important;
+    }
+    .iPhone-dropdown-menu{
+        position: absolute;
+        top: 43%; 
+        left: 84%;
+        width:50px !important;
+    }
+}

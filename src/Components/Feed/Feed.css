@@ -1,0 +1,95 @@
+.mainfeed{
+    margin: 20px;
+    background-color: #fff;
+}
+.feed {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+   
+}
+h3 {
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 20px;
+}
+.card {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20%;
+}
+.card img {
+    height: 150px;
+    width: 70%;
+    margin: 10% 15%;
+}
+.description .title {
+    font-weight: 600;
+    text-align: center;
+    height:75px;
+    overflow: hidden;
+}
+.description .price {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bolder;
+    text-align: center;
+    font-size: larger;
+}
+.description #moredetails{
+ margin:0 8%;
+}
+.description button{
+    margin-left:10%;
+}
+.modal-header{
+    padding: 4px;
+}
+.modal-title{
+    font-weight: bolder;
+    text-align: center;
+}
+.modal-body{
+    padding: 2px;
+}
+.modal-body img{
+    margin:15px 70px;
+    object-fit:contain;
+}
+.modal-body p{
+    padding-left:10px;
+    padding-right: 5px;
+}
+.modal-footer{
+    padding:0;
+}
+.card:hover{
+    /* background-color: rgb(211, 211, 211); */
+    box-shadow: -8px -8px 8px 8px rgba(11, 4, 4, 0.2);
+}
+#addcart{
+    background-color: rgb(24, 179, 166);
+    color: white;
+}
+ @media(max-width:900px){
+    .card{
+        width:90%;
+    }
+    .card img{
+        margin-bottom: 20px;
+        object-fit: contain;
+    }
+    .description .title {
+        height:50px;
+    }
+    #viewdetails{
+        margin-left: 6%;
+    }
+    #addcart{
+        margin-top:0 !important;
+        margin-left: 8% !important;
+    }
+
+} 

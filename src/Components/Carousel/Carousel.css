@@ -1,0 +1,8 @@
+.carousel div img{
+    margin:20px;
+}
+@media(max-width:900px){
+    .carousel div img{
+        width:93%;
+    }
+}

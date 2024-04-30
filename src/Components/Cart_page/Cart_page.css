@@ -1,0 +1,141 @@
+.lefthalf {
+    width: 70%;
+}
+.pricedetails{
+    height: 60vh;
+    margin:20px;
+}
+.cartpage{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(238, 237, 237);
+    margin-top:5%;
+}
+.removeitem{
+    margin-left: 200px;
+}
+.authenticate{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 10px;
+    
+}
+.lefthalf .address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.safe{
+    display: flex;
+    flex-direction: row;
+  
+}
+.priceheader{
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.pricebody div{
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    margin:10px;
+}
+
+.address p,
+.address button {
+    margin: 23px 20px;
+    font-size: larger;
+}
+
+.summary {
+    padding: 10px;
+}
+
+.card1_description{
+    display: "flex";
+    flex-direction: "column";
+}
+.card1 img{
+    margin: 20px 40px 20px 20px;
+    height: 150px;
+    width: 200px;
+}
+.card1_description p{
+    font-size: larger;
+}
+.card1 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.delivery{
+    font-size:15px !important;
+
+}
+.free{
+    color: green;
+    font-weight: bold;
+}
+.placeorder div{
+    background-color: white;
+    box-shadow: -4px -4px 7px 2px rgba(0, 0, 0, 0.20);
+}
+
+.placeorder button {
+    background-color: red;
+    color: white;
+    padding: 10px 60px;
+    border: none;
+    margin-left: 70%;
+    margin-top: 15px;
+ 
+    margin-bottom: 15px;
+}
+.total{
+    border-top: 3px dotted rgba(0, 0, 0, 0.30);
+    border-bottom: 3px dotted rgba(0, 0, 0, 0.30);
+}
+.total p{
+    margin-top: 20px;
+}
+
+@media(max-width:900px){
+    .lefthalf {
+        width: 100%;
+    }
+    .cartpage{
+        display: flex;
+        flex-direction: column;       
+    }
+    .removeitem{
+        margin-left: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .address p,
+    .address button {
+        font-size: medium
+    }
+    
+    .summary {
+        padding: 3px;
+    }
+    .card1_description p{
+        font-size: medium;
+    }
+    .card1 {
+        margin: 25px;
+    }
+    .card1 img{
+        height: 100px;
+        width: 70px;
+    }
+    .delivery{
+        font-size:14px !important;
+    }
+    .placeorder button {
+        margin-left: 50%;
+    }
+}
